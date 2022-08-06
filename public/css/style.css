@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background: hsl(0deg, 0%, 95%);
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  height: 200%;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2.5rem;
+}
+
+.box {
+  padding: 2.5rem 2.2rem;
+}
+.box h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.3rem;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+  margin: 1.8rem 0;
+}
+.box p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem;
+}
+.box button {
+  background: hsl(0deg, 0%, 95%);
+  border: none;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  cursor: pointer;
+  padding: 1rem 2.1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  transition: all 0.5s ease-in-out;
+}
+.box button:hover {
+  background: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+
+.orange-box {
+  background: hsl(31deg, 77%, 52%);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.orange-box button {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.cyan-box {
+  background: hsl(184deg, 100%, 22%);
+}
+.cyan-box button {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.dark-cyan-box {
+  background: hsl(179deg, 100%, 13%);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.dark-cyan-box button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+@media (min-width: 769px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1040px;
+  }
+  .wrapper p {
+    margin-bottom: 4rem;
+  }
+  .box {
+    padding: 3rem 2.8rem;
+  }
+  .box button {
+    font-size: 1rem;
+    padding: 1rem 2.6rem;
+  }
+  .orange-box {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .dark-cyan-box {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
