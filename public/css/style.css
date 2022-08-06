@@ -79,6 +79,9 @@ body {
 }
 
 @media (min-width: 769px) {
+  .container {
+    height: 100vh;
+  }
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
     max-width: 1040px;
